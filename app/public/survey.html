@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Start the survey below!</h2>
+
+        <div class="form">
+            <h3>About You</h3>
+            <h4>Name</h4>
+            <input type="text" class="name-input" required>
+
+            <br>
+
+            <h4>Link your photo here!</h4>
+            <input type="text" class="photo-input" required>
+
+            <br>
+
+            <h3>Question 1</h3>
+            <h4>You are happy sitting in the same room and using your phone</h4>
+            <select id="question-1">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>Question 2</h3>
+            <h4>You enjoy going to random places in your city</h4>
+            <select id="question-2">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>Question 3</h3>
+            <h4>Nightlife is always an option for the weekend</h4>
+            <select id="question-3">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>Question 4</h3>
+            <h4>Having intentional conversations defines your friendship</h4>
+            <select id="question-4">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h3>Question 5</h3>
+            <h4>It is easy for you to get impatient</h4>
+            <select id="question-5">
+                <option value=""></option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="submit-button">
+            <button type="submit">Submit</button>
+        </div>
+        <div class="results">
+            <details>
+                <summary>Check out your results!</summary>
+                <h2 id='user-match'></h2>
+                <img src="https://i.imgur.com/8jqYvFL.jpg" alt="duck and dog" id="match-image">
+
+            </details>
+        </div>
+    </div>
+</body>
+</html>
